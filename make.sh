@@ -4,11 +4,16 @@
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
 ############################
 
+# sudo apt-get update && upgrade
+# sudo apt-get install mc tmux conky vncserver sshserver detox dupes gparted vnc rpd
+# sudo blkid to find UUI
+# sudo vi /etc/fstab to add hd:s
+
 ########## Variables
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bashrc vimrc vim zshrc oh-my-zsh"    # list of files/folders to symlink in homedir
+files="bashrc conkyrc detoxrc nanorc tmux.conf vimrc"    # list of files/folders to symlink in homedir
 
 ##########
 
